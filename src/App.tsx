@@ -1,4 +1,4 @@
-  /**
+/**
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -179,8 +179,9 @@ export default function App() {
         preload="auto"
         crossOrigin="anonymous"
       >
-      <source src="/Rick_Roll_Video_Meme_Template_V1.mp4" type="video/mp4" />
-      Ваш браузер не поддерживает видео.
+        <source src="./rickroll.mp4" type="video/mp4" />
+        <source src="https://shattereddisk.github.io/rickroll/rickroll.mp4" type="video/mp4" />
+        Ваш браузер не поддерживает видео.
       </video>
 
     </div>
