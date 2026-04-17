@@ -1,11 +1,36 @@
-<div align="center">
+# CryTeam RickRoll Portal (max.cryteam.ru)
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Этот проект настроен для автоматической деплоя на **GitHub Pages**.
 
-  <h1>Built with AI Studio</h2>
+## Как запустить на GitHub:
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+1.  **Создайте новый репозиторий** на GitHub.
+2.  **Загрузите (Push)** все файлы этого проекта в репозиторий.
+3.  **Настройте GitHub Actions**:
+    *   Перейдите в `Settings` -> `Pages` в вашем репозитории.
+    *   В разделе **Build and deployment** -> **Source** выберите **GitHub Actions**.
+4.  **Готово!** После этого при каждом пуше в ветку `main`, GitHub будет автоматически собирать проект и публиковать его.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Как привязать домен max.cryteam.ru:
 
-</div>
+1.  В настройках репозитория (`Settings` -> `Pages`) найдите поле **Custom domain**.
+2.  Введите `max.cryteam.ru` и сохраните.
+3.  В настройках вашего DNS-провайдера (где зарегистрирован cryteam.ru) добавьте запись:
+    *   **Type**: CNAME
+    *   **Name**: max
+    *   **Value**: `<ваш-никнейм>.github.io`
+
+## Локальная разработка:
+
+Если вы хотите запустить проект у себя на компьютере:
+
+```bash
+npm install
+npm run dev
+```
+
+Для сборки финальной версии:
+```bash
+npm run build
+```
+Результат будет в папке `dist`.

@@ -1,0 +1,6 @@
+{
+  "name": "CryTeam Portal",
+  "description": "Secure access portal for CryTeam members and official resources.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
